@@ -2,7 +2,8 @@ $(document).ready(function() {
   let totaldiv = $("#total");
   totaldiv.text(0);
   let number = 0;
-  let newNumber = 0;
+  let first = 0;
+  let result = 0;
   let operator = '';
   var testNumLength = function(number) {
     if (number.length > 9) {
@@ -13,7 +14,6 @@ $(document).ready(function() {
       }
     }
   };
-
   $("#numbers > button").not("#clear,#equals").click(function() {
     number += $(this).text();
     totaldiv.text(number);
@@ -21,16 +21,22 @@ $(document).ready(function() {
   });
   $("#operators > button").click(function() {
     operator = $(this).text();
-    newNumber = number;
+    // could have running total
+    if (result === null) {
+      newNumber = number;
+    } else {
+      newNumber = result;
+    }
     number = "";
     totaldiv.text(0);
   });
   $("#clear").click(function() {
     number = "";
+    result = null;
     totaldiv.text(0);
   });
   $("#equals").click(function() {
-    let result = 0;
+
     number = parseInt(number, 10);
     newNumber = parseInt(newNumber, 10);
     if (operator === "+") {
@@ -47,4 +53,6 @@ $(document).ready(function() {
     number = 0;
     newNumber = 0;
   });
+
+
 });
