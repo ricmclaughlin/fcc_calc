@@ -24,7 +24,7 @@ div, button {
   background-color: white;
   border-radius: 5px;
   margin-bottom: 5px;
-  font-size: 60px;
+  font-size: 56px;
   border-style: inset;
   text-align: right;
 }
@@ -58,4 +58,16 @@ div, button {
   border-radius: 5px;
   background-color: lightgray;
   font-size: 35px;
+}
+
+.stylish {
+  font-family: 'Qwigley', cursive;
+  font-size: 25px;
+}
+
+footer p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
 }

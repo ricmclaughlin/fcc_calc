@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Calc2</title>
+  <title>Free Code Camp jQuery Calculator</title>
   <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" charset="utf-8"></script>
 </head>
@@ -13,27 +14,31 @@
   <div id="calculator">
     <div id="total"></div>
     <div id="operators">
-      <button>+</button>
-      <button>-</button>
-      <button>/</button>
-      <button>*</button>
-
+      <button id="add">+</button>
+      <button id="subtract">-</button>
+      <button id="multiply">*</button>
+      <button id="divide">/</button>
     </div>
     <div id="numbers">
-      <button>9</button>
-      <button>8</button>
-      <button>7</button>
-      <button>6</button>
-      <button>5</button>
-      <button>4</button>
-      <button>3</button>
-      <button>2</button>
-      <button>1</button>
+      <button id="nine">9</button>
+      <button id="eight">8</button>
+      <button id="seven">7</button>
+      <button id="six">6</button>
+      <button id="five">5</button>
+      <button id="four">4</button>
+      <button id="three">3</button>
+      <button id="two">2</button>
+      <button id="one">1</button>
       <button id="clear">C</button>
-      <button>0</button>
+      <button id="zero">0</button>
       <button id="equals">=</button>
     </div>
   </div>
+  <footer>
+    <p>
+      Made with <span class="stylish">style</span> by <a href="http://ric.mclaughlin.today">Ric McLaughlin</a>
+    </p>
+  </footer>
 </body>
 
 </html>
